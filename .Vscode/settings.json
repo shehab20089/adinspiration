@@ -1,0 +1,10 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    ["cva\\(([^)]*)\\)", "[\"'`]([^\"'`]*).*?[\"'`]"]
+  ],
+  "i18n-ally.localesPaths": [
+    "../../../../../games/job/BitBang/amp-web/src/localization",
+    "public/locales"
+  ],
+  "i18n-ally.keystyle": "nested"
+}
