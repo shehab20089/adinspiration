@@ -41,7 +41,7 @@ export const ScrollTopButton = ({
   return (
     <button
       className={cn(
-        "fixed bottom-[200px] right-8 p-2 rounded-full bg-black/60  text-white shadow-lg transition-opacity duration-300",
+        "fixed bottom-[300px] right-8 p-2 rounded-full bg-black/60  text-white shadow-lg transition-opacity duration-300",
         isVisible ? "opacity-100" : "opacity-0",
         className
       )}
