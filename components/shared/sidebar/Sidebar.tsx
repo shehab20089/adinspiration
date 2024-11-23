@@ -12,7 +12,7 @@ export const Sidebar = () => {
             {item.items.map((subItem) => (
               <button
                 key={subItem.key}
-                className="text-left  font-medium rounded-md hover:bg-gray-100 text-lg text-[#4B5768]"
+                className="text-left  font-medium rounded-md hover:text-[#4B5768]/80 text-lg text-[#4B5768]"
               >
                 {subItem.title}
               </button>
