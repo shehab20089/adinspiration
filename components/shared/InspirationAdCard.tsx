@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import { TypographyP } from "./Typography";
+import { Button } from "../ui/button";
 import { Avatar, AvatarImage } from "../ui/avatar";
 import Image from "next/image";
 import { useState } from "react";
@@ -29,13 +30,13 @@ export const InspirationAdCard = ({
   return (
     <div
       className={cn(
-        "rounded-[20.57px] p-[15.3px] min-w-[267.41px] max-w-[267.41px] border-[#E7EAEE] space-y-[11.5px] border-[0.96px] border-[#E7EAEE",
+        "rounded-[20.57px] relative group  sm:min-w-[267.41px] sm:max-w-[267.41px] min-w-full max-w-full border-[#E7EAEE] space-y-[11.5px] border-[0.96px] border-[#E7EAEE",
         className
       )}
       {...props}
     >
       {/* ad card header */}
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between pt-[15.3px] px-[15.3px]">
         <TypographyP className="text-[#10B981] text-[10.29px] font-medium">
           {isNew ? "New" : ""}
         </TypographyP>
@@ -55,22 +56,32 @@ export const InspirationAdCard = ({
         </div>
       </div>
       {/* ad card img */}
-      <div className=" w-full h-[367px] rounded-[15.3px] overflow-hidden">
-        {/* Using state to handle image errors */}
-        <Image
-          src={imgSrc}
-          alt={brandName}
-          width={0}
-          height={0}
-          sizes="100%"
-          className="w-full h-full object-cover"
-          onError={() => {
-            setImgSrc("/images/placeholder.png");
-          }}
-        />
+      <div className=" relative px-[15.3px]">
+        <div className=" w-full h-[367px] rounded-[15.3px]   overflow-hidden  ">
+          {/* Using state to handle image errors */}
+          <Image
+            src={imgSrc}
+            alt={brandName}
+            width={0}
+            height={0}
+            sizes="100%"
+            className="w-full h-full object-cover"
+            onError={() => {
+              setImgSrc("/images/placeholder.png");
+            }}
+          />
+        </div>
+        <div className="absolute cursor-pointer inset-0 bg-black/30 backdrop-blur-sm opacity-0 group-hover:opacity-100 focus-within:opacity-100 active:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+          <Button variant={"default"} className="bg-black rounded-full">
+            <Avatar className="w-4 h-4 ">
+              <AvatarImage src={brandUrl}></AvatarImage>
+            </Avatar>
+            Edit Template
+          </Button>
+        </div>
       </div>
       {/* brand name */}
-      <TypographyP className="text-[13.72px] font-medium text-[#323A46]">
+      <TypographyP className="text-[13.72px] pb-[15.3px] px-[15.3px] font-medium text-[#323A46]">
         {brandName}
       </TypographyP>
     </div>

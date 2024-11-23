@@ -8,7 +8,7 @@ export default function Home() {
     <div className="">
       {/* Heading Area */}
       <div className="max-w-[901px] text-center mx-auto space-y-4 mb-14">
-        <Heading1 className=" text-[40px] font-bold ">
+        <Heading1 className=" text-[26px] md:text-[40px] font-bold ">
           The Best <span className="text-[#0866FF] ">Facebook</span>,{" "}
           <span className="text-[#DD2A7B]">Instagram</span>, And Meta Ad
           Inspiration, Templates and Examples
@@ -20,7 +20,7 @@ export default function Home() {
         </TypographyP>
       </div>
       <FilterBox className="mb-12" />
-      <div className="flex flex-wrap gap-5 mb-[66px]">
+      <div className="flex md:flex-row flex-col flex-wrap gap-5 mb-[66px]">
         {inspirationAds.map((ad) => (
           <InspirationAdCard
             key={ad.id}
@@ -28,7 +28,7 @@ export default function Home() {
             brandUrl={ad.brandUrl}
             brandLink={ad.brandLink}
             brandName={ad.brandName}
-            className="flex-1"
+            className="flex-1 "
             isNew
           />
         ))}

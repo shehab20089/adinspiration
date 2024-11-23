@@ -12,7 +12,7 @@ export default function MainLayout({
       <Navbar />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1 overflow-hidden  p-10 bg-[#3652D9]/5">
+        <main className="flex-1 overflow-hidden  py-10 px-6 md:px-10  bg-[#3652D9]/5">
           {children}
         </main>
       </div>

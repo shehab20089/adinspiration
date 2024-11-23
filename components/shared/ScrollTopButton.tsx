@@ -41,7 +41,7 @@ export const ScrollTopButton = ({
   return (
     <button
       className={cn(
-        "fixed bottom-[300px] right-8 p-2 rounded-full bg-black/60  text-white shadow-lg transition-opacity duration-300",
+        "fixed bottom-[300px] md:right-8 right-[2px] p-1 md:p-2 rounded-full bg-black/60  text-white shadow-lg transition-opacity duration-300",
         isVisible ? "opacity-100" : "opacity-0",
         className
       )}
@@ -54,6 +54,7 @@ export const ScrollTopButton = ({
         viewBox="0 0 24 24"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
+        className="md:w-6 md:h-6 w-4 h-4"
       >
         <path
           d="M12 19V5M12 5L5 12M12 5L19 12"
