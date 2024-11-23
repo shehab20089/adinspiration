@@ -22,7 +22,7 @@ const navItems = [
 ];
 export const Navbar = () => {
   return (
-    <header className="flex items-center justify-between ">
+    <header className="flex items-center justify-between border-b border-[#E7EAEE] ">
       <Heading2 className="text-mainDark px-[26px] py-[27.5px]">
         ADINSPIRATION.COM
       </Heading2>
