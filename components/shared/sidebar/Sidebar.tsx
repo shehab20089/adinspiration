@@ -2,7 +2,7 @@ import { sidebarItems } from "./data";
 
 export const Sidebar = () => {
   return (
-    <div className="bg-[#F9FAFB] w-[230px] border-[#E7EAEE] border-e p-8">
+    <div className="bg-[#F9FAFB] w-[230px] border-[#E7EAEE] border-e p-8 md:block hidden ">
       {sidebarItems.map((item) => (
         <div key={item.group} className="mb-8">
           <h3 className="text-xl font-bold text-[#323A46] mb-4">
