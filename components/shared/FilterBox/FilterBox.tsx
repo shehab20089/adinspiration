@@ -16,9 +16,10 @@ import {
 import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 
-interface FilterBoxProps extends React.ComponentProps<"div"> {}
-
-export const FilterBox = ({ className, ...props }: FilterBoxProps) => {
+export const FilterBox = ({
+  className,
+  ...props
+}: React.ComponentProps<"div">) => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   if (!isMobile)
     return (
