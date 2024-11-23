@@ -1,3 +1,4 @@
+import { Footer } from "@/components/shared/Footer";
 import { Navbar } from "@/components/shared/Navbar";
 import { Sidebar } from "@/components/shared/sidebar/Sidebar";
 
@@ -15,6 +16,7 @@ export default function MainLayout({
           {children}
         </main>
       </div>
+      <Footer />
     </div>
   );
 }
