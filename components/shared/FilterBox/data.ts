@@ -1,0 +1,16 @@
+export const filterItems = [
+  { name: "Lifestyle", items: 120 },
+  { name: "Travel", items: 85 },
+  { name: "Food", items: 95 },
+  { name: "Fashion", items: 150 },
+  { name: "Beauty", items: 110 },
+  { name: "How-to/Features", items: 75 },
+  { name: "UGC", items: 45 },
+  { name: "Pain Points", items: 63 },
+  { name: "Split Screen", items: 987 },
+  { name: "Before & After", items: 124 },
+  { name: "Grid", items: 89 },
+  { name: "Pricing", items: 156 },
+  { name: "News", items: 234 },
+  { name: "Benefits", items: 178 },
+];

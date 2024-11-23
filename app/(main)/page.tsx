@@ -1,10 +1,10 @@
 import { Heading1, TypographyP } from "@/components/shared/Typography";
-
+import { FilterBox } from "@/components/shared/FilterBox/FilterBox";
 export default function Home() {
   return (
     <div className="">
       {/* Heading Area */}
-      <div className="max-w-[901px] text-center mx-auto space-y-4">
+      <div className="max-w-[901px] text-center mx-auto space-y-4 mb-14">
         <Heading1 className=" text-[40px] font-bold ">
           The Best <span className="text-[#0866FF] ">Facebook</span>,{" "}
           <span className="text-[#DD2A7B]">Instagram</span>, And Meta Ad
@@ -16,6 +16,7 @@ export default function Home() {
           ads stand out and sell even more!
         </TypographyP>
       </div>
+      <FilterBox />
     </div>
   );
 }

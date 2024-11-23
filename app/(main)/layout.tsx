@@ -11,7 +11,9 @@ export default function MainLayout({
       <Navbar />
       <div className="flex flex-1">
         <Sidebar />
-        <main className="flex-1  p-10 bg-[#3652D9]/5">{children}</main>
+        <main className="flex-1 overflow-hidden  p-10 bg-[#3652D9]/5">
+          {children}
+        </main>
       </div>
     </div>
   );
