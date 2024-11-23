@@ -4,10 +4,19 @@ import { TypographyP } from "../Typography";
 import { Switch } from "@/components/ui/switch";
 import { filterItems } from "./data";
 import DragScroll from "../DragableScroll";
+import { cn } from "@/lib/utils";
 
-export const FilterBox = () => {
+interface FilterBoxProps extends React.ComponentProps<"div"> {}
+
+export const FilterBox = ({ className, ...props }: FilterBoxProps) => {
   return (
-    <div className="flex items-center relative overflow-hidden gap-4 ">
+    <div
+      className={cn(
+        "flex items-center relative overflow-hidden gap-4 ",
+        className
+      )}
+      {...props}
+    >
       <Input
         icon={<NormalSearch />}
         placeholder="Search"
